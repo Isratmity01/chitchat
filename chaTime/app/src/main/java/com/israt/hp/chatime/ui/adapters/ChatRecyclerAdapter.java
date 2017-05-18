@@ -20,6 +20,8 @@ import com.israt.hp.chatime.utils.RoundTransform;
 
 import java.util.List;
 
+import hani.momanii.supernova_emoji_library.Helper.EmojiconTextView;
+import hani.momanii.supernova_emoji_library.emoji.Emojicon;
 
 
 public class ChatRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
@@ -167,13 +169,13 @@ public class ChatRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     }
 
     private static class MyChatViewHolder extends RecyclerView.ViewHolder {
-        private TextView txtChatMessage;
+        private EmojiconTextView txtChatMessage;
         private ImageView icon;
          ImageView MsgImage;
 
         public MyChatViewHolder(View itemView) {
             super(itemView);
-            txtChatMessage = (TextView) itemView.findViewById(R.id.text_view_chat_message);
+            txtChatMessage = (EmojiconTextView) itemView.findViewById(R.id.text_view_chat_message);
             icon = (ImageView) itemView.findViewById(R.id.imageself);
             MsgImage = (ImageView) itemView.findViewById(R.id.imageView_msg);
 
@@ -190,12 +192,12 @@ public class ChatRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     }
 
     private static class OtherChatViewHolder extends RecyclerView.ViewHolder {
-        private TextView txtChatMessage;
+        private EmojiconTextView txtChatMessage;
         private ImageView icon;
         private ImageView MsgImage;
         public OtherChatViewHolder(View itemView) {
             super(itemView);
-            txtChatMessage = (TextView) itemView.findViewById(R.id.text_view_chat_message);
+            txtChatMessage = (EmojiconTextView) itemView.findViewById(R.id.text_view_chat_message);
             icon = (ImageView) itemView.findViewById(R.id.imageself);
             MsgImage = (ImageView) itemView.findViewById(R.id.imageView_msg);
         }
