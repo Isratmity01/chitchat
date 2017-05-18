@@ -1,0 +1,10 @@
+
+05-17 04:15:42.477 23548-23548/com.israt.hp.chatime D/sending msg: msgsending
+05-17 04:15:43.467 23548-23548/com.israt.hp.chatime D/msg: msg sent
+05-17 04:15:43.557 23548-23548/com.israt.hp.chatime D/InsideonGetMsgSuc: check
+05-17 04:15:43.567 23548-23548/com.israt.hp.chatime D/Inside adapter: msg shown
+
+05-17 04:15:45.817 23548-23548/com.israt.hp.chatime D/sending msg: msgsending
+05-17 04:15:46.777 23548-23548/com.israt.hp.chatime D/msg: msg sent
+05-17 04:15:46.867 23548-23548/com.israt.hp.chatime D/InsideonGetMsgSuc: check
+05-17 04:15:46.887 23548-23548/com.israt.hp.chatime D/Inside adapter: msg shown

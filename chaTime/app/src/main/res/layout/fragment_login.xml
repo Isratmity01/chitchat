@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="50dp"
+    android:background="#ece7e7"
+
+    >
+
+
+
+
+
+                <ImageView
+                    android:layout_width="@dimen/toplogow"
+                    android:layout_height="@dimen/toplogoh"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/chat"
+                    android:id="@+id/imageView"
+                        android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/toppadding"
+                    android:layout_marginTop="@dimen/toppadding"
+                    android:layout_alignParentTop="true" />
+
+    <com.google.android.gms.common.SignInButton
+                    android:id="@+id/sign_in_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignEnd="@+id/imageView"
+                    android:layout_alignStart="@+id/imageView" />
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/login_facebook_login_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_above="@+id/sign_in_button"
+                    android:layout_centerHorizontal="true"
+                    />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/fb"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:id="@+id/chotofb"
+
+        android:layout_marginRight="@dimen/padding_small"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/google"
+        android:layout_marginRight="@dimen/padding_small"
+        android:id="@+id/chotogoogle"
+
+        android:layout_marginLeft="@dimen/padding_small"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_avg"
+        style="@style/TextAppearance.Design.Hint"
+        android:text="Login \nUsing "
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="30sp"
+        android:textColor="?attr/colorPrimary"
+        android:textStyle="bold"
+        android:id="@+id/textView"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

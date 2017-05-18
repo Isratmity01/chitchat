@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+
+
+
+
+    android:padding="@dimen/padding_avg">
+
+    <TextView
+        android:id="@+id/text_view_chat_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_toStartOf="@+id/imageself"
+        android:background="@drawable/bg_bubble_gray"
+        android:padding="@dimen/padding_small"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        tools:text="Nice man !" />
+    <ImageView
+
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_toStartOf="@+id/imageself"
+
+        android:id="@+id/imageView_msg"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:id="@+id/imageself"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>
